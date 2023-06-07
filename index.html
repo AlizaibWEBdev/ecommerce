@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="style/utlits.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="d-flex flex-col">
+      <div class="top d-flex flex-center">
+        <div class="logo flex-center d-flex">
+          <img src="icons/libra.png" alt="" />
+        </div>
+        <div class="search flex-center">
+          <input type="text" placeholder="search here.." />
+          <div class="icon"></div>
+        </div>
+      </div>
+      <div class="links d-flex flex-center align-self-end">
+        <ul class="d-flex flex-center">
+          <li><a href="hello">top Tv</a></li>
+          <li><a href="hello">mobile phones</a></li>
+          <li><a href="hello">Ac</a></li>
+          <li><a href="hello">top Tv</a></li>
+          <li><a href="hello">men jahan rahon</a></li>
+          <li><a href="hello">vip bathroom</a></li>
+          <li><a href="hello">kuch nahi </a></li>
+          <li><a href="hello">mobile phones</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="filter fix bg" onclick="togleFilters()"></div>
+    <div class="filters go-to-left-filtres" id="filters">
+      <div class="top">
+        <div class="close-icon" onclick="togleFilters()"></div>
+      </div>
+      <br />
+      <div class="price-filter">
+        <h4>Price Range</h4>
+        <div class="input-group">
+          <label for="min-price">Min:</label>
+          <input
+            type="number"
+            id="min-price"
+            min="0"
+            step="any"
+            placeholder="Min Price"
+          />
+        </div>
+        <div class="input-group">
+          <label for="max-price">Max:</label>
+          <input
+            type="number"
+            id="max-price"
+            min="0"
+            step="any"
+            placeholder="Max Price"
+          />
+        </div>
+        <p class="websites-hading"> chose websites</p>
+        <div class="d-flex websites">
+          <div class="option">
+            <label for="amazon">amazon</label>
+            <input type="checkbox" class="checkbox" id="amazon" />
+          </div>
+          <div class="option">
+            <label for="amazon">amazon</label>
+            <input type="checkbox" class="checkbox" id="amazon" />
+          </div>
+          <div class="option">
+            <label for="amazon">amazon</label>
+            <input type="checkbox" class="checkbox" id="amazon" />
+          </div>
+          <div class="option">
+            <label for="amazon">amazon</label>
+            <input type="checkbox" class="checkbox" id="amazon" />
+          </div>
+          <div class="option">
+            <label for="amazon">amazon</label>
+            <input type="checkbox" class="checkbox" id="amazon" />
+          </div>
+        </div><br>
+        <button id="apply-button">Apply</button>
+      </div>
+      <br />
+
+      <br />
+      <div class="wraper d-flex flex-center">
+        <div class="categories-man d-flex flex-col flex-center">
+          <p>categories</p>
+          <div class="categories">
+            <ul>
+              <li>Electronics</li>
+              <li>Fashion and Apparel</li>
+              <li>Home and Kitchen</li>
+              <li>Personal care</li>
+              <li>Books and Media</li>
+              <li>Health and Fitness</li>
+              <li>Toys and Games</li>
+              <li>Automotive</li>
+              <li>Sports and Outdoor</li>
+              <li>Jewelry and Accessories</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="products">
+      <div class="products d-flex">
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+        <div class="card">
+          <div class="from"><p>amazon</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>Daraz 11</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        <div class="card">
+          <div class="from"><p>buy 1 get 1</p></div>
+          <img
+            src="icons/photo-1542291026-7eec264c27ff.jpg"
+            alt="Product Image"
+          />
+          <h2 class="card-title">this is the randome Product Title !!</h2>
+          <p class="card-price">$19.99</p>
+          <a href="#" class="add-to-cart">cehk out</a>
+        </div>
+
+        
+       </div>
+    </section>
+  </body>
+  <script src="js/main.js"></script>
+</html>
