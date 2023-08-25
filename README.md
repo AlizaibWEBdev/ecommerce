@@ -1,2 +1,2 @@
-# ecommerce
-this is responsiv webiste design using html css and js 
+# ecommerce site frontend ui
+this is responsiv webiste ui for the ecomres site 
